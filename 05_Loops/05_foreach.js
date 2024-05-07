@@ -35,5 +35,21 @@ const mycoding= [
 
 
 mycoding.forEach((item)=>{
-console.log(`${item.extension} is the extension for the  ${item.language}`);
+// console.log(`${item.extension} is the extension for the  ${item.language}`);
 })
+
+
+
+const numbers = [1,2,3,4,5,6,7,8,9,10]
+
+// const numval = numbers.filter((num)=>num>4)
+// console.log(numval);
+
+//another way to do this 
+
+const nume = numbers.filter((item)=>{
+    return  item>4
+})
+
+console.log(nume);
+ 
