@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM here</title>
+</head>
+<body style="background-color: rgb(37, 36, 36);color: azure;">
+    
+</body>
+<script>
+  const div = document.createElement('div')
+  console.log(div);
+  div.className="main"
+  div.id=Math.round(Math.random() * 10 + 1)
+  div.setAttribute("title","generetd title")
+  div.style.backgroundColor="Green"
+  div.style.padding="12px"
+//   div.innerText="Learning dom"
+  const addtext = document.createTextNode("Learning Document Object Model (DOM)")
+  div.append(addtext)
+  document.body.appendChild(div)
+
+</script>
+</html>
