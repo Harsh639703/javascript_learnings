@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnig async code</title>
+</head>
+
+<body>
+    <h1>Learning Async code</h1>
+    <button id="stop">stop</button>
+    <script>
+
+        //    setTimeout(function(){
+        //     console.log("Mera naam hai Harsh");    this is the direct way of executing the setTimout function
+        //    },2000)
+
+
+        const change = function () {
+            document.querySelector('h1').innerHTML = "this is the best javascript , i have ever watched"
+        }
+
+
+        const funct = function () {
+            console.log("I am learning code here");
+        }
+
+        const eg = setTimeout(funct, 2000)//In this we are passing the  reference of the function
+        const chan = setTimeout(change, 4000)//In this we are passing the  reference of the function
+
+        document.getElementById('stop').addEventListener('click',function(){
+            clearTimeout(eg)
+            console.log("stopped");
+        })
+    
+
+
+
+
+    </script>
+</body>
+
+</html>
